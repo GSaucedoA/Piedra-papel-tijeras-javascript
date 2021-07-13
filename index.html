@@ -4,9 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Piedra, papel o tijeras</title>
+    <title>Rock, paper or scissors</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <main class="content">
+      <h1 class="title">Rock, Paper, Scissors</h1>
+      <div class="scores">
+        <p>Player score: <span id="playerScore">0</span></p>
+        <p>PC score: <span id="pcScore">0</span></p>
+        <p>Ties: <span id="ties">0</span></p>
+      </div>
+      <div class="options">
+        <div class="options__player">
+          <h2>Player Choose</h2>
+          <button>
+            Rock
+            <img
+              class="options__player-img"
+              src="./img/rock.png"
+              alt=""
+              srcset=""
+            />
+          </button>
+          <button>
+            Paper
+            <img class="options__player-img" src="./img/paper.png" alt="" />
+          </button>
+          <button>
+            Scissors
+            <img class="options__player-img" src="./img/scissors.png" alt="" />
+          </button>
+        </div>
+        <div class="options__pc">
+          <h2 class="options__pc-title">PC Choose</h2>
+          <img class="options__pc-img none" src="" alt="" />
+          <p class="options__pc-default">First make your choose</p>
+        </div>
+      </div>
+    </main>
+    <div id="results" class="results none"></div>
     <script src="./app.js"></script>
   </body>
 </html>
